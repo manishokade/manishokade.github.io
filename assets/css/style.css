@@ -19,9 +19,9 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
 }
-/* 
-Scroll bar
-*/
+/*--------------------------------------------------------------
+Scroll bar css
+--------------------------------------------------------------*/
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -785,7 +785,24 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+
+.portfolio-item  .publication-item{
+  background: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-item  .publication-item.alter{
+  background: rgb(229, 235, 194);
+}
+
+
+.portfolio-item  .publication-item p{
+  margin: 0;
+}
+
+.portfolio-container .portfolio-item {
   margin-bottom: 30px;
 }
 
@@ -821,7 +838,7 @@ section {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+/* .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -903,12 +920,12 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: calc(50% - 50px);
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/* .portfolio-details {
   padding-top: 40px;
 }
 
@@ -968,12 +985,12 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonial-item {
+/* .testimonials .testimonial-item {
   box-sizing: content-box;
   min-height: 320px;
 }
@@ -1052,7 +1069,7 @@ section {
   .testimonials {
     margin: 30px 10px;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact

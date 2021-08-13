@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #5a656e;
@@ -89,7 +93,7 @@ Scroll bar css
 }
 
 #header .logo h1 {
-  font-size: 26px;
+  font-size: 25px;
   margin: 0;
   padding: 6px 0;
   line-height: 1;
@@ -101,12 +105,6 @@ Scroll bar css
 #header .logo h1 a, #header .logo h1 a:hover {
   color: #2c4964;
   text-decoration: none;
-}
-
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
 }
 
 .scrolled-offset {
@@ -207,15 +205,6 @@ Scroll bar css
   visibility: visible;
 }
 
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
-}
-
 /**
 * Mobile Navigation 
 */
@@ -232,7 +221,7 @@ Scroll bar css
   color: #fff;
 }
 
-@media (max-width: 1028px) {
+@media (max-width: 1200px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -352,7 +341,7 @@ Scroll bar css
 #hero {
   width: 100%;
   height: 75vh;
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg.jpg") bottom center;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/portfolio/cover-image.jpeg") bottom ;
   background-size: cover;
   padding: 0 15px;
 }
@@ -393,6 +382,18 @@ Scroll bar css
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+  #profile{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background: url("../img/manish.jpg") right center;
+    background-size: cover;
+    box-sizing: border-box;
+    border: 8px solid #1687A7;
+    box-shadow: 0 0 0 10px #276678;
+    margin: 10px;
+    padding-top: 3rem;
   }
 }
 
@@ -657,7 +658,8 @@ section {
   bottom: 0;
   box-sizing: border-box;
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 780px) {
   .ibm-img{
     width: 100%;
     height: 30rem;
@@ -804,6 +806,7 @@ section {
 
 #download {
   width: 100%;
+  margin: 0 0 3rem 0;
 }
 
 #download tr {
@@ -865,10 +868,11 @@ section {
 }
 
 .testimonials .testimonial-item {
-  height: 16rem;
+  line-height: 1.5;
+  height: 18rem;
   font-style: italic;
-  margin: 0 15px 0 15px;
-  padding: 20px;
+  margin: 0 15px;
+  padding: 1.5rem;
   background: #fff;
   position: relative;
   border-radius: 6px;
@@ -908,9 +912,11 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  margin-bottom: 3rem;
+}
 .contact .contact-about h3 {
   font-size: 36px;
-  /* margin: 0 0 10px 0; */
   padding: 0;
   line-height: 1;
   font-weight: 300;
@@ -1054,6 +1060,9 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background: #fff;
   padding: 24px 0;
   font-size: 14px;

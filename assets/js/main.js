@@ -1,9 +1,4 @@
-/**
-* Template Name: Lonely - v4.3.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -241,6 +236,7 @@
       delay: 3000,
       disableOnInteraction: false
     },
+    grabCursor:true,
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
@@ -252,7 +248,6 @@
         slidesPerView: 1,
         spaceBetween: 40
       },
-
       1200: {
         slidesPerView: 3,
       }
@@ -260,3 +255,73 @@
   });
 
 })()
+
+const files=[{
+  path:"/files/CNN-Camera-Motion-Classification.rar",
+  name:"CNN Camera Motion Classification",
+  author_date:"MANISH OKADE, JUL 1, 2020, 10:17 AM",
+},
+{
+  path:"/files/CURL-code.rar",
+  name:"CURL code",
+  author_date:"MANISH OKADE, APR 11, 2020, 11:32 AM",
+},
+{
+  path:"/files/ICVGIP-2016.rar",
+  name:"ICVGIP 2016",
+  author_date:"MANISH OKADE, JAN 10, 2019, 4:50 PM",
+},
+{
+  path:"/files/LDP_DWT_Supplementary.pdf",
+  name:"LDP DWT Supplementary",
+  author_date:"MANISH OKADE, JAN 10, 2019, 4:50 PM",
+},
+{
+  path:"/files/MTAP-Saliency.zip",
+  name:"MTAP Saliency",
+  author_date:"MANISH OKADE, SEP 28, 2020, 4:00 PM",
+},
+{
+  path:"/files/NA-DJPEG-SPIC.zip",
+  name:"NA DJPEG SPIC",
+  author_date:"MANISH OKADE, JAN 10, 2019, 4:51 PM",
+},
+{
+  path:"/files/ncc-enhancement-code.rar",
+  name:"ncc enhancement code",
+  author_date:"MANISH OKADE, JAN 10, 2019, 4:48 PM",
+},
+{
+  path:"/files/Saliency_code.rar",
+  name:"Saliency code",
+  author_date:"MANISH OKADE, APR 22, 2020, 10:29 AM",
+},
+{
+  path:"/files/VCIP-2016.rar",
+  name:"VCIP 2016",
+  author_date:"MANISH OKADE, JAN 10, 2019, 4:50 PM",
+},
+{
+  path:"/files/supplimentary_results_NCC-2016.rar",
+  name:"supplimentary results NCC 2016",
+  author_date:"MANISH OKADE, JAN 10, 2019, 4:49 PM",
+},
+{
+  path:"/files/WIFS_Resizing.zip",
+  name:"WIFS Resizing",
+  author_date:"MANISH OKADE, APR 6, 2019, 6:49 PM",
+}
+]
+
+const downloadsContainer=document.getElementById("download");
+
+files.forEach(file => {
+  // var fileName=file.name
+  downloadsContainer.innerHTML+=`
+        <tr>
+          <td><i class="file bi bi-file-earmark-fill"></i>${file.name}</td>
+          <td>${file.author_date}</td>
+          <td><a href=${file.path} download><i class="bi bi-download"></i></a></td>
+        </tr>
+`;
+});

@@ -316,7 +316,6 @@ const files=[{
 const downloadsContainer=document.getElementById("download");
 
 files.forEach(file => {
-  // var fileName=file.name
   downloadsContainer.innerHTML+=`
         <tr>
           <td><i class="file bi bi-file-earmark-fill"></i>${file.name}</td>

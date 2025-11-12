@@ -310,8 +310,12 @@ const files=[{
   path:"/files/WIFS_Resizing.zip",
   name:"WIFS Resizing",
   author_date:"MANISH OKADE, APR 6, 2019, 6:49 PM",
-}
-]
+},
+{
+  path:"/files/tcasrm.zip",
+  name:"TCAS Paper",
+  author_date:"MANISH OKADE, Nov 12 , 2025, 12:14 PM",
+}]
 
 const downloadsContainer=document.getElementById("download");
 
